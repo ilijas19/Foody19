@@ -1,0 +1,114 @@
+@media (max-width: 1112px) {
+  .recipe {
+    width: 20rem;
+  }
+}
+@media (max-width: 1000px) {
+  .footer-section {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 904px) {
+  html {
+    font-size: 60%;
+  }
+  .preference-div {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .preference-div a:last-child {
+    display: none;
+  }
+}
+@media (max-width: 860px) {
+  .rec-recipes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .rec-recipes :nth-child(7),
+  .rec-recipes :nth-child(8) {
+    display: none;
+  }
+}
+@media (max-width: 660px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 590px) {
+  .rec-recipes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .recipe {
+    width: 25rem;
+  }
+  .footer-section {
+    padding: 2rem;
+  }
+  nav {
+    padding: 1rem;
+  }
+  .hero-section-input {
+    font-size: 1.7rem;
+    padding: 1rem;
+  }
+}
+@media (max-width: 520px) {
+  html {
+    font-size: 50%;
+  }
+  .preference-div {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .preference-div a:last-child {
+    display: inline-block;
+  }
+  .health-preference-heading {
+    font-size: 2rem;
+  }
+  .health-preference-text {
+    font-size: 1.2rem;
+  }
+  .hero-section-heading {
+    font-size: 3rem;
+  }
+  .search-container {
+    width: 80%;
+  }
+  .rec-meals-menu {
+    gap: 1rem;
+  }
+  .preference {
+    padding: 1rem;
+    font-size: 1.3rem;
+  }
+  .saved-recipes-btn {
+    font-size: 1.4rem;
+    padding: 0.8rem;
+  }
+  .logo-div h2 {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 446px) {
+  .recipe {
+    width: 20rem;
+  }
+  .health-preference-text {
+    font-size: 1.1rem;
+  }
+  nav menu a {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 370px) {
+  .rec-meals-item {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 350px) {
+  .recipe {
+    width: 18rem;
+  }
+  .health-preference-text {
+    font-size: 1rem;
+  }
+}

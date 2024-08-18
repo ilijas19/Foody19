@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foody</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/allRecipesStyle.css" />
+    <link rel="stylesheet" href="styles/allRecipesQuerries.css" />
+    <link rel="stylesheet" href="styles/popupQuerries.css" />
+  </head>
+  <body>
+    <header id="header"></header>
+    <main>
+      <div class="all-recipes-container">
+        <aside class="search-menu">
+          <!-- SEARCH BY NAME SECTION -->
+          <section class="search-by-name-section">
+            <div class="search-menu-heading-div">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <h2 class="search-menu-heading">Search by name</h2>
+              <button class="close-menu-btn">CLOSE</button>
+            </div>
+
+            <div class="search-input-div">
+              <input class="search" type="search" placeholder="Search" />
+              <p class="search-btn">🔍</p>
+            </div>
+          </section>
+
+          <!-- SEARCH BY NAME SECTION -->
+          <section class="filter-section">
+            <div class="search-menu-heading-div">
+              <i class="fa-solid fa-arrow-down-short-wide"></i>
+              <h2 class="search-menu-heading">Filters</h2>
+            </div>
+
+            <div class="filters-container">
+              <ul class="filters">
+                <li class="filter">
+                  <div class="filter-visible">
+                    <i class="fa-solid fa-utensils filter-visible-icon"></i>
+                    <p class="filter-visible-text">Meal</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-caret-up hidden"></i>
+                  </div>
+                  <div class="filter-options">
+                    <a
+                      class="option meal-type-option"
+                      search-data="breakfast"
+                      href="#"
+                      >Breakfast</a
+                    >
+                    <a
+                      class="option meal-type-option"
+                      search-data="lunch"
+                      href="#"
+                      >Lunch</a
+                    >
+                    <a
+                      class="option meal-type-option"
+                      search-data="snack"
+                      href="#"
+                      >Snack</a
+                    >
+                    <a
+                      class="option meal-type-option"
+                      search-data="teatime"
+                      href="#"
+                      >Teatime</a
+                    >
+                  </div>
+                </li>
+
+                <li class="filter">
+                  <div class="filter-visible">
+                    <i class="filter-visible-icon fa-solid fa-bowl-rice"></i>
+                    <p class="filter-visible-text">Dish</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-caret-up hidden"></i>
+                  </div>
+                  <div class="filter-options">
+                    <a class="option dish-option" search-data="bread" href="#"
+                      >Bread</a
+                    >
+                    <a class="option dish-option" search-data="cereals" href="#"
+                      >Cereals</a
+                    >
+                    <a class="option dish-option" search-data="soup" href="#"
+                      >Soup</a
+                    >
+                    <a class="option dish-option" search-data="sweets" href="#"
+                      >Sweets</a
+                    >
+                    <a class="option dish-option" search-data="starter" href="#"
+                      >Starter</a
+                    >
+                    <a
+                      class="option dish-option"
+                      search-data="side dish"
+                      href="#"
+                      >Side dish</a
+                    >
+                    <a
+                      class="option dish-option"
+                      search-data="sandwitch"
+                      href="#"
+                      >Sandwitches</a
+                    >
+                    <a class="option dish-option" search-data="salad" href="#"
+                      >Salads</a
+                    >
+                    <a class="option dish-option" search-data="pancake" href="#"
+                      >Pancake</a
+                    >
+                    <a class="option dish-option" search-data="dessert" href="#"
+                      >Desserts</a
+                    >
+                    <a class="option dish-option" search-data="drink" href="#"
+                      >Drinks</a
+                    >
+                    <a
+                      class="option dish-option"
+                      search-data="main course"
+                      href="#"
+                      >Main Course</a
+                    >
+                  </div>
+                </li>
+
+                <li class="filter">
+                  <div class="filter-visible">
+                    <i class="filter-visible-icon fa-solid fa-heart-pulse"></i>
+                    <p class="filter-visible-text">Health</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-caret-up hidden"></i>
+                  </div>
+                  <div class="filter-options">
+                    <a class="option health-option" search-data="vegetarian"
+                      >Vegetarian</a
+                    >
+                    <a class="option health-option" search-data="vegan"
+                      >Vegan</a
+                    >
+                    <a class="option health-option" search-data="egg-free"
+                      >Egg Free</a
+                    >
+                    <a class="option health-option" search-data="vegan"
+                      >Vegan</a
+                    >
+                    <a class="option vegan-option" search-data="no-oil-added"
+                      >No oil added</a
+                    >
+                    <a class="option vegan-option" search-data="no-oil-added"
+                      >No oil added</a
+                    >
+                    <a class="option health-option" search-data="vegetarian"
+                      >Vegetarian</a
+                    >
+                    <a class="option health-option" search-data="vegan"
+                      >Vegan</a
+                    >
+                    <a class="option health-option" search-data="egg-free"
+                      >Egg Free</a
+                    >
+                    <a class="option health-option" search-data="no-oil-added"
+                      >No oil added</a
+                    >
+                    <a class="option health-option" search-data="egg-free"
+                      >Egg-Free</a
+                    >
+                    <a class="option health-option" search-data="no-oil-added"
+                      >No oil added</a
+                    >
+                    <a class="option health-option" search-data="low-potassium"
+                      >Low Potassium</a
+                    >
+                    <a class="option health-option" search-data="paleo"
+                      >Paleo</a
+                    >
+                    <a class="option health-option" search-data="soy-free"
+                      >Soy free</a
+                    >
+                    <a class="option health-option" search-data="fish-free"
+                      >Fish free</a
+                    >
+                  </div>
+                </li>
+
+                <li class="filter">
+                  <div class="filter-visible">
+                    <i class="fa-solid fa-earth-europe filter-visible-icon"></i>
+                    <p class="filter-visible-text">Cuisine</p>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <i class="fa-solid fa-caret-up hidden"></i>
+                  </div>
+                  <div class="filter-options">
+                    <a class="option cuisine-option" search-data="american"
+                      >American</a
+                    >
+                    <a class="option cuisine-option" search-data="asian"
+                      >Asian</a
+                    >
+                    <a class="option cuisine-option" search-data="british"
+                      >British</a
+                    >
+                    <a class="option cuisine-option" search-data="indian"
+                      >Indian</a
+                    >
+
+                    <a class="option cuisine-option" search-data="nordic"
+                      >Nordic</a
+                    >
+                    <a class="option cuisine-option" search-data="italian"
+                      >Italian</a
+                    >
+                    <a class="option cuisine-option" search-data="nordic"
+                      >Nordic</a
+                    >
+                    <a class="option cuisine-option" search-data="french"
+                      >French</a
+                    >
+                    <a class="option cuisine-option" search-data="chinese"
+                      >Chinese</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </aside>
+        <section class="all-recipes-section">
+          <div class="all-recipes-heading-div">
+            <h2 class="all-recipes-heading">All Recipes</h2>
+            <button class="filter-btn">Filters</button>
+          </div>
+          <article class="all-recipes-wrapper">
+            <!-- <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div>
+
+            <div class="recipe">
+              <img src="/images/recipeImgTest.jpg" alt="" />
+              <figcaption class="recipe-info">
+                <p class="recipe-name">Sandwitch</p>
+                <button class="see-rec-btn">See recipe</button>
+              </figcaption>
+            </div> -->
+          </article>
+          <div class="pagination">
+            <button class="pagination-btn btn-prev">Prev Page</button>
+            <button class="pagination-btn btn-next">Next Page</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer id="footer"></footer>
+    <script type="module" src="src/controller.js"></script>
+  </body>
+</html>

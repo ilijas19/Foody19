@@ -1,0 +1,231 @@
+/* general */
+.hidden {
+  display: none !important;
+}
+.active-filter {
+  background-color: #dddddd5e;
+}
+
+.all-recipes-container {
+  display: grid;
+  grid-template-columns: 0.35fr 1fr;
+}
+
+.search-menu {
+  border-right: 1px solid #333;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  padding-right: 5px;
+  padding-bottom: 3rem;
+  margin-top: -0.1rem;
+  z-index: 999999999;
+}
+
+.search-menu-heading-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.search-menu-heading-div i {
+  font-size: 1.8rem;
+}
+
+.search-menu-heading-div h2 {
+  font-size: 2.4rem;
+}
+
+.search-input-div {
+  width: 90%;
+  position: relative;
+
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.search-input-div input {
+  width: 100%;
+  padding-right: 3rem; /* Space for the icon */
+  background-color: transparent;
+  border: 2px solid #333;
+  font-size: 1.6rem;
+  padding: 1rem;
+  padding-right: 0px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.search-input-div input:focus {
+  outline: none;
+  border: 2px solid #e8590c;
+}
+.search-input-div input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-input-div input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.search-input-div input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.search-input-div p {
+  position: absolute;
+  top: 50%;
+  right: 0rem;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  margin: 0; /* Remove default margin */
+  color: #333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.search-input-div p:hover {
+  scale: 1.1;
+}
+/* FILTERS */
+
+.filters {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style-type: none;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+.filter-visible {
+  padding: 1rem;
+  border-radius: 12px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.filter-visible-icon {
+  font-size: 2rem;
+  color: #e8590c;
+  margin-right: 2rem;
+}
+.filter-visible-text {
+  font-size: 2.4rem;
+}
+.fa-caret-down,
+.fa-caret-up {
+  margin-left: auto;
+  font-size: 3rem !important;
+  cursor: pointer;
+  color: #e8590c;
+}
+.filter-options {
+  width: 100%;
+  display: none;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  margin-top: 0rem;
+  opacity: 0;
+  height: 0;
+}
+.option {
+  color: #b3b3b3dd;
+  text-decoration: none;
+  border: 1px solid #dddd;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 4rem;
+  width: 8rem;
+  cursor: default;
+  font-weight: 500;
+}
+.option:hover {
+  border: 1px solid #e8590c;
+  color: #e8590c;
+}
+.all-recipes-wrapper {
+  min-height: 50rem;
+  padding: 1rem;
+  padding-bottom: 2rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  row-gap: 3rem;
+}
+.all-recipes-heading {
+  font-size: 3rem;
+}
+.all-recipes-wrapper .recipe {
+  width: 20rem;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+.pagination-btn {
+  background-color: transparent;
+  color: #e8590c;
+  border: 1px solid #e8590c;
+  padding: 1rem;
+  border-radius: 12px;
+  font-weight: 500;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.pagination-btn:hover {
+  background-color: #e8590c;
+  color: #fff;
+}
+.all-recipes-heading-div {
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 1rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-btn {
+  border: 1px solid #e8590c;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #e8590c;
+  font-weight: 600;
+  opacity: 0;
+}
+.close-menu-btn {
+  margin-left: auto;
+  border: 1px solid #e8590c;
+  background-color: transparent;
+  padding: 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  color: #e8590c;
+  font-weight: 600;
+  opacity: 0;
+}

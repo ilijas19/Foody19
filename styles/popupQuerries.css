@@ -1,0 +1,232 @@
+/* Styles for .popup-recipe */
+.popup-recipe {
+  border: 3px solid #333;
+  height: 80%;
+  width: 95%;
+  background-color: #181818;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /*  */
+  /*  */
+}
+
+.popup-img-div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.heading-div {
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup-heading {
+  font-size: 3rem;
+  max-width: 80%;
+}
+.popup-creator {
+  color: #8a8a8a;
+  font-size: 1.1rem;
+}
+.recipe-web-link {
+  display: block;
+  color: #fff;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.popup-img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  overflow: hidden;
+}
+.popup-info {
+  /* border: 3px solid red; */
+  border-left: 2px solid #333;
+}
+.recipe-stats {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  border-bottom: 1px solid #333;
+  border-top: 1px solid #333;
+  padding: 0.5rem;
+  padding-bottom: 0.7rem;
+}
+.recipe-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #8a8a8a;
+}
+.recipe-stat:nth-child(2) {
+  border-left: 2px solid #333;
+  border-right: 2px solid #333;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.stat-num {
+  font-size: 4rem;
+  font-weight: 600;
+  color: #dddddd;
+}
+.stat {
+  font-size: 1.2rem;
+}
+
+.recipe-tags {
+  border-bottom: 1px solid #333;
+
+  list-style-type: none;
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+.tag {
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.ingredients-heading {
+  grid-column: 1/-1;
+
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.ingredients-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  gap: 0.5rem;
+  margin-left: 4rem;
+}
+.ingredient {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.popup-heading-left-side {
+  width: 80%;
+}
+.save-recipe-btn {
+  background-color: #e8590c;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+  transition: all 0.4s;
+  margin-left: auto;
+  margin-top: 1rem;
+  width: 11rem;
+}
+.remove-recipe-btn {
+  background-color: #e03131;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border: 1px solid #ddd;
+  transition: all 0.4s;
+
+  margin-top: 1rem;
+  width: 11rem;
+}
+.close-recipe-btn {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+  background-color: #e03131;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.4rem;
+  border-radius: 12px;
+  transition: all 0.4s;
+}
+.save-recipe-btn:hover,
+.close-recipe-btn:hover {
+  cursor: pointer;
+  scale: 1.05;
+}
+@media (max-width: 900px) {
+  .heading-div {
+    padding-top: 2rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .save-recipe-btn,
+  .remove-recipe-btn {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+  }
+  .ingredients-list {
+    margin-left: 1rem;
+  }
+  .popup-heading {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 750px) {
+  .popup-recipe {
+    grid-template-columns: 1fr;
+    overflow: scroll;
+  }
+  .popup-img-div {
+    grid-row: 2;
+    padding: 1rem;
+  }
+  .heading-div {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .save-recipe-btn,
+  .remove-recipe-btn {
+    padding: 0.8rem;
+    font-size: 1.4rem;
+  }
+
+  .ingredients-list {
+    margin: 0;
+    padding: 3rem;
+    padding-top: 1rem;
+    border-bottom: 1px solid #333;
+  }
+}
+
+@media (max-width: 380px) {
+  .popup-heading {
+    font-size: 2rem;
+  }
+  .tag {
+    font-size: 1.3rem;
+  }
+}

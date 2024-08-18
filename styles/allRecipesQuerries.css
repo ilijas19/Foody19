@@ -1,0 +1,134 @@
+@media (max-width: 1500px) {
+  .all-recipes-wrapper .recipe {
+    width: 18rem;
+  }
+}
+@media (max-width: 1400px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 1300px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .all-recipes-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+  .all-recipes-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1040px) {
+  .all-recipes-container {
+    grid-template-columns: 1fr;
+  }
+  .all-recipes-section {
+    margin-top: 5rem;
+  }
+  .search-menu {
+    position: fixed;
+    top: 6rem;
+    background-color: #181818;
+    height: 100%;
+    overflow: scroll;
+    /* Scrollbar Styling */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #888 #181818; /* Firefox */
+    width: 0;
+    left: -50rem;
+    transition: all 0.6s ease; /* Smooth transition */
+  }
+  .search-menu.menu-open {
+    width: 40rem;
+    left: 0;
+  }
+  .filter-btn {
+    opacity: 1;
+  }
+
+  /* WebKit Browsers (Chrome, Safari) */
+  .search-menu::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+  }
+
+  .search-menu::-webkit-scrollbar-track {
+    background: #181818; /* Track color */
+  }
+
+  .search-menu::-webkit-scrollbar-thumb {
+    background-color: #888; /* Scrollbar thumb color */
+    border-radius: 10px; /* Roundness of the scrollbar thumb */
+    border: 2px solid #181818; /* Padding around thumb */
+  }
+  .close-menu-btn {
+    opacity: 1;
+  }
+  nav {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    left: 0;
+  }
+
+  .all-recipes-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .all-recipes-wrapper .recipe {
+    width: 20rem;
+  }
+  .footer-section {
+    padding: 2rem 5rem;
+  }
+}
+@media (max-width: 750px) {
+  .all-recipes-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 590px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    padding: 1rem;
+  }
+}
+@media (max-width: 520px) {
+  .saved-recipes-btn {
+    font-size: 1.4rem;
+
+    padding: 0.8rem;
+  }
+  .logo-div h2 {
+    font-size: 2.4rem;
+  }
+  nav menu a {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 512px) {
+  .all-recipes-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search-menu {
+    /* display: block; */
+  }
+
+  .footer-section {
+    padding: 2rem 1rem;
+  }
+}
